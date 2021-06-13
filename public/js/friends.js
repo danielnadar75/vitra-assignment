@@ -1,7 +1,7 @@
 const container = document.querySelector('.container')
 
 const getData = async () => {
-    const response = await fetch('http://localhost:3000/friends-list')
+    const response = await fetch('/friends-list')
     if (response.status !== 200) {
         throw new Error('Unable to fetch friends list.')
     }

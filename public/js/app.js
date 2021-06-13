@@ -6,7 +6,7 @@ const selectedRange = document.querySelector('.selected-range')
 
 
 const getData = async (value) => {
-    const response = await fetch(`http://localhost:3000/range-filter?range=${value}`)
+    const response = await fetch(`/range-filter?range=${value}`)
     if (response.status !== 200) {
         throw new Error('Unable to fetch data!!')
     }
