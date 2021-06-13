@@ -14,14 +14,13 @@ const getData = async (value) => {
 }
 
 selectedRange.textContent = `Selected Range: $0`
-
+peopleListEl.innerHTML = ''
 
 rangeInput.oninput = (() => {
 
     var value = rangeInput.value || 0;
 
     selectedRange.textContent = `Selected Range: $${value}`
-
     peopleListEl.innerHTML = ''
 
     getData(value).then((people) => {
