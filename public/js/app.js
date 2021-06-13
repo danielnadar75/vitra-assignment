@@ -20,6 +20,7 @@ rangeInput.oninput = (() => {
     var value = rangeInput.value || 0;
 
     selectedRange.textContent = `Selected Range: $${value}`
+    peopleListEl.innerHTML = 'Loading...'
 
     getData(value).then((people) => {
         peopleListEl.innerHTML = ''

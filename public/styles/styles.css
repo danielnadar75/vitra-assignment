@@ -101,6 +101,7 @@ p {
   border: 1px solid #999;
   box-shadow: 2px 4px 8px #3838381a;
   transition: border .3s ease;
+  cursor: pointer;
 }
 
 .name {
@@ -149,4 +150,5 @@ p {
   border: 1px solid #8f8f8fee;   
   transition: border .3s ease;
   box-shadow: 2px 4px 8px #3838381a;
+  cursor: pointer;
 }
