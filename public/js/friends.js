@@ -15,5 +15,7 @@ getData().then((friends) => {
         friendEl.classList.add('friend')
         friendEl.textContent = friend
         container.appendChild(friendEl)
+    }).catch((e) => {
+        console.log(e)
     })
 })

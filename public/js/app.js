@@ -40,6 +40,8 @@ rangeInput.oninput = (() => {
             peopleListEl.appendChild(peopleEl)
 
         })
+    }).catch((e) => {
+        console.log(e);
     })
 
 });
